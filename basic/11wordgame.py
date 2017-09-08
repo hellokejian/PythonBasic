@@ -1,4 +1,4 @@
-# fin = open('d:/words.txt')
+# fin = open('D:/WorkSpace(kejian)/Pycharm/PythonBasic/basic/12word.txt')
 # index = 0
 # for line in fin:
 #     print(line.strip())
@@ -9,7 +9,7 @@
 
 
 def get_more_than_20():
-    fin = open("d:/words.txt")
+    fin = open("D:/WorkSpace(kejian)/Pycharm/PythonBasic/basic/12word.txt")
     for line in fin:
         if len(line) > 20:
             print(line.strip())
@@ -28,7 +28,7 @@ def has_no_e(str):
 
 
 def print_without_e():
-    fin = open("d:/words.txt")
+    fin = open("D:/WorkSpace(kejian)/Pycharm/PythonBasic/basic/12word.txt")
     for line in fin:
         if has_no_e(line):
             print(line)
@@ -67,15 +67,21 @@ def order(str):
     if len(str) == 1:
         flag = True
         return flag
-    ord1 = ord(str[0])
-    ord2 = ord(str[1])
 
-    if ord1 == ord2 - 1:
+    if ord(str[0]) == ord(str[1]) - 1:
         flag = order(str[1:])
-
-    else:
-        return flag
     return flag
 
 
-print(order("ab"))
+# print(order("aba"))
+
+def order1(str):
+    if len(str) <= 1:
+        return True
+
+    if ord(str[0]) != ord(str[1]) - 1:
+        return False
+    return order(str[1:])
+
+
+print(order("aba"))
