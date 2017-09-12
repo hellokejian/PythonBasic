@@ -5,4 +5,3 @@ try:
     fin.close()
 except:
     print('something went wrong')
-
