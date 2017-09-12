@@ -2,9 +2,19 @@
   <dictionary name="hello">
     <words>
       <w>aabbcc</w>
+      <w>abccba</w>
+      <w>addr</w>
       <w>cartalk</w>
+      <w>chenqi</w>
+      <w>divmod</w>
+      <w>domian</w>
+      <w>findthird</w>
       <w>findtwice</w>
+      <w>hisograms</w>
       <w>kejian</w>
+      <w>newchar</w>
+      <w>printall</w>
+      <w>vals</w>
     </words>
   </dictionary>
 </component>
