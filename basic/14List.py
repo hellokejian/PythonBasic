@@ -46,3 +46,5 @@ list2 = [1, 2, 3]
 a = "banana"
 a = "apple"
 print(a)
+
+classmates = ['kejian','chenqi']
