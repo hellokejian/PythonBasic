@@ -3,5 +3,6 @@ try:
     for line in fin:
         print(line)
     fin.close()
+
 except:
     print('something went wrong')
